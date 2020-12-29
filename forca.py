@@ -2,8 +2,7 @@ import random
 from time import sleep
 
 # Escolhe aleatoriamente a palavra de uma das categorias
-categorias = ["animais", "objetos", "paises", "times"]
-categoria = random.choice(categorias)
+categoria = random.choice(["animais", "objetos", "paises", "times"])
 
 with open(f'{categoria}.txt', 'r') as f:
 	palavras = f.readlines()
