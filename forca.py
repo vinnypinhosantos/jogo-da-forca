@@ -1,4 +1,5 @@
 import random
+from time import sleep
 
 categorias = ["animais", "objetos", "paises", "times"]
 categoria = random.choice(categorias)
@@ -46,3 +47,5 @@ if acabou:
 	print(f"Você acertou! A palavra era {palavra}")
 else:
 	print(f"Game Over! A palavra era {palavra}")
+
+sleep(100)
