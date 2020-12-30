@@ -23,27 +23,12 @@ def jogo(palavra):
 
 	while not acabou:
 		
-		# Percorre a palvra e escreve os espaços e letras
-		for letra in palavra:
-			# Escreve os traços e espaços
-			if letra == "-":
-				print("-", end='')
-				chutes.append(letra)
-			elif letra == " ":
-				print("  ", end='')
-				chutes.append(letra)
-			else:
-				# Verifica se a letra "chutada" está na palavra
-				if letra.lower() in chutes:
-					print(f"{letra}", end=' ')
-				else:
-					print("_", end=' ')
-		print()
+		criando_forca(palavra, chutes)
 		
 		# Pede a letra ao usuário e adiciona na lista de chutes
 		chute = input(f"Você ainda pode errar {erros_permitidos} vezes. Seu palpite: ")
 		chutes.append(chute)
-		
+			
 		# Verifica se o chute não está na palavra e tira uma chance do usuário até chegar a 0
 		if chute.lower() not in palavra.lower():
 			erros_permitidos -= 1
@@ -55,6 +40,7 @@ def jogo(palavra):
 		for letra in palavra:
 			if letra.lower() not in chutes:
 				acabou = False
+
 	return acabou
 
 
@@ -85,3 +71,22 @@ def de_novo(acabou):
 	return novamente
 
 
+def criando_forca(palavra, chutes):
+	# Percorre a palvra e escreve os espaços e letras
+	for letra in palavra:
+		# Escreve os traços e espaços
+		if letra == "-":
+			print("-", end='')
+			chutes.append(letra)
+		elif letra == " ":
+			print("  ", end='')
+			chutes.append(letra)
+		else:
+			# Verifica se a letra "chutada" está na palavra
+			if letra.lower() in chutes:
+				print(f"{letra}", end=' ')
+			else:
+				print("_", end=' ')
+	print()
+
+	
