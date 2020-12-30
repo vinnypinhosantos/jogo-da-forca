@@ -78,3 +78,5 @@ def de_novo(acabou):
 		else:
 			print("Digite S ou N para escolher!")
 	return novamente
+
+
