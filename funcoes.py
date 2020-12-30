@@ -15,7 +15,12 @@ def escolhe_palavra():
 	return palavra
 
 
-def jogo(palavra, acabou, chutes, erros_permitidos):
+def jogo(palavra):
+	# Define o número máximo de erros, a lista de chites e uma variavel para terminar o jogo
+	erros_permitidos = 6
+	acabou = False
+	chutes = []
+
 	while not acabou:
 		
 		# Percorre a palvra e escreve os espaços e letras
