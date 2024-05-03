@@ -20,8 +20,14 @@ São 4 categorias de palavras possíveis: animais, objetos, países e times de f
 
 1. Clone o repositório com o seguinte comando:
  
-     `git clone https://github.com/vinnypinhosantos/jogo_da_forca.git`
+     `git clone https://github.com/vinnypinhosantos/jogo-da-forca.git`
 
 2. Acesse a pasta do projeto e execute com o comando:
 
     `python forca.py`
+
+## Me contatar
+
+Para me contatar com alguma dúvida, sugestão, oportunidade ou crítica mande e-mail para [vinnypinhosantos@gmail](mailto:vinnypinhosantos@gmail).
+
+Também estou no [Linkedin](https://www.linkedin.com/in/vinicius-de-pinho/).
