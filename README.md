@@ -1,4 +1,8 @@
-# Jogo da Forca - Aplicativo de Console
+# Jogo da Forca
+
+## Tipo de aplicação
+
+Aplicativo de Console
 
 ## Objetivo do projeto
 
